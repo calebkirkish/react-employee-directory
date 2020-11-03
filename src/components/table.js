@@ -1,5 +1,6 @@
 import React from 'react';
 import Api from "../utils/API.js"
+import '../styles/table.css'
 
 function EmployeeTable(props) {
     const { employees } = props;
