@@ -1,17 +1,43 @@
-import React from 'react';
-import Api from "../utils/API.js"
-import '../styles/table.css'
+import React, { useState } from 'react';
+import '../styles/table.css';
+
 
 function EmployeeTable(props) {
     const { employees } = props;
+    const [sortConfig, setSortConfig] = useState(null);
+    let sortedEmployees = [...employees];
+    if (sortConfig !== null) {
+        employees.sort((a, b) => {
+            let forward = sortConfig[sortConfig.field+"Forward"];
+            let multiplier = 1;
+            if (!forward) multiplier = -1;
+            if (a.name[sortConfig.field] < b.name[sortConfig.field]) {
+                return -1 * multiplier;
+            }
+            if (a.name[sortConfig.field] > b.name[sortConfig.field]) {
+                return 1 * multiplier;
+            }
+            return 0;
+        })
+        console.log(sortedEmployees)
+        console.log(sortConfig)
+    }
     return (
         <table>
             <caption>Our employees</caption>
             <thead>
                 <tr>
                     <th>Image</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
+                    <th>
+                        <button type='button' onClick={() => setSortConfig({field: 'first', firstForward: !sortConfig?.firstForward ?? true})}>
+                            First Name
+                            </button>
+                    </th>
+                    <th>
+                        <button type='button' onClick={() => setSortConfig({field: 'last', lastForward: !sortConfig?.lastForward ?? true})}>
+                            Last Name
+                        </button>
+                    </th>
                     <th>Email</th>
                 </tr>
             </thead>
