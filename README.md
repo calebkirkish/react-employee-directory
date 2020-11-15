@@ -1,1 +1,40 @@
-# Employee Directory using React
+# Employee Directory
+
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Tests](#tests)
+- [license](#license)
+- [Contributing](#contributing)
+- [Questions](#questions)
+
+# Description
+
+This is an application that generates 200 random users and creates a table that is able to sort first and last name as well as updating the directory everytime we type a letter in the search bar.
+
+# Installation
+
+npm install axios
+
+# Usage
+
+Creating a React based application that updates that table only based on searches and sorting the table based on first name and last name.
+
+# Tests
+
+no
+
+# license
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-darkred.svg)](https://opensource.org/licenses/MIT)
+[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-darkgreen.svg)](http://www.wtfpl.net/about/)
+
+# Contributing
+
+Contact me
+
+# Questions
+
+#### you can find my github profile here: https://github.com/calebkirkish
+
+#### If you have any questions about my projects you can contact me: caleb.kirkish@gmail.com
