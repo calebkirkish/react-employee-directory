@@ -2,7 +2,7 @@
   "name": "react-employee-directory",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/calebkirkish.io/react-employee-directory",
+  "homepage": "https://calebkirkish.github.io/react-employee-directory",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.0",
