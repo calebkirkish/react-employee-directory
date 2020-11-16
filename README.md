@@ -8,13 +8,21 @@
 - [Contributing](#contributing)
 - [Questions](#questions)
 
+# Demo
+
+![Employee-Directory-Overview](https://github.com/calebkirkish/react-employee-directory/blob/master/demo/employee-directory-overview.jpg)
+![Employee-Directory-Search](https://github.com/calebkirkish/react-employee-directory/blob/master/demo/employee-search.gif)
+
+[Deployed App on GitHub Pages](https://calebkirkish.github.io/react-employee-directory/)
+
 # Description
 
 This is an application that generates 200 random users and creates a table that is able to sort first and last name as well as updating the directory everytime we type a letter in the search bar.
 
 # Installation
 
-npm install axios
+npm install
+npm start
 
 # Usage
 
